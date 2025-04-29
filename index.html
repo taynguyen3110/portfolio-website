@@ -1,247 +1,285 @@
 <!DOCTYPE html>
-<!--
-	Solid State by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-  <head>
-    <title>Richard Nguyen Portfolio</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  </head>
-  <body class="is-preload">
-    <!-- Page Wrapper -->
-    <div id="page-wrapper">
-      <!-- Header -->
-      <header id="header" class="alt">
-        <h1><a href="index.html">Richard Nguyen</a></h1>
-        <!-- <nav>
-							<a href="#menu">Menu</a>
-						</nav> -->
-      </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting to My Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #3b82f6;
+      --primary-darker: #2563eb;
+      --bg-start: #1a1a2e;
+      --bg-end: #16213e;
+      --text: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.2);
+    }
 
-      <!-- Menu -->
-      <!-- <nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav> -->
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      <!-- Banner -->
-      <section id="banner">
-        <div class="inner">
-          <!-- <div class="logo"><span class="icon fa-gem"></span></div> -->
-          <h2>RICHARD NGUYEN</h2>
-          <p style="text-transform: none">
-            Junior Fullstack Developer, with a passion for simplicity and efficiency. <br/>
-            <a href="#contact"><span>Let’s connect!</span></a>
-          </p>
-        </div>
-      </section>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      height: 100vh;
+      background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text);
+      overflow: hidden;
+      position: relative;
+    }
 
-      <!-- Wrapper -->
-      <section id="wrapper">
-        <!-- One -->
-        <!-- <section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Magna arcu feugiat</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
-									</div>
-								</div>
-							</section> -->
+    .container {
+      text-align: center;
+      z-index: 10;
+      padding: 2rem;
+      max-width: 90%;
+      animation: fadeIn 1s ease-out;
+    }
 
-        <!-- Two -->
-        <section id="two" class="wrapper alt spotlight style2">
-          <div class="inner">
-            <a href="#" class="image"
-              ><img src="images/profilePic.JPG" alt=""
-            /></a>
-            <div class="content">
-              <h2 class="major">About Me</h2>
-              <blockquote>
-                Dedicated and highly motivated Fullstack Developer with a
-                Master's degree in Information Technology. Skilled in developing
-                interactive and user-friendly websites, with proficiency in
-                front-end technologies such as React, Angular.
-              </blockquote>
-			  <ul class="actions">
-                <li style="margin-left: auto;">
-                  <a style="text-transform: none;" href="./documents/CV - Richard Nguyen.pdf" class="button icon solid fa-download" download="CV - Richard Nguyen.pdf">My Resume</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
+    h1 {
+      font-weight: 600;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
 
-        <!-- Three -->
-        <section id="three" class="wrapper spotlight style3">
-          <div class="inner">
-            <div class="content">
-              <h2 class="major">Skills</h2>
-              <ul style="margin-left: 1em;">
-                <li>
-                  <strong>Frameworks/Libraries:</strong> React, Angular, Next.js
-                </li>
-                <li>
-                  <strong>Front-End:</strong> Tailwind CSS, Razor Pages
-                </li>
-                <li>
-                  <strong>Back-End:</strong> Node.js, Express.js, Firebase, ASP.NET Core, Entity Framework Core
-                </li>
-                <li><strong>Databases:</strong> SQL Server, MySQL</li>
-                <li><strong>Cloud & Tools:</strong> AWS, Docker, Git, Postman</li>
-                <li>
-                  <strong>Other:</strong> REST APIs, Unit Testing
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
+    p {
+      font-weight: 300;
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
+      opacity: 0.9;
+    }
 
-        <!-- Commercial Project -->
-        <section id="four" class="wrapper alt style1">
-          <div class="inner">
-            <h2 class="major">Contributed Commercial Projects</h2>
-            <blockquote>
-              Please refer to my CV for a comprehensive overview of my contributions.
-            </blockquote>
-            <!-- <p>
-              Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
-              Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis
-              egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus
-              in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.
-            </p> -->
-            <section class="features">
-              <article>
-                <a href="https://www.richardle.com.au/" class="image" target="_blank"
-                  ><img src="images/property-advisor.png" alt=""
-                /></a>
-                <h3 class="major">Property Advisor Project</h3>
-                <p>
-					React, Next.js, Tailwind CSS, Swiper.
-                </p>
-              </article>
-              <article>
-                <a href="https://www.swav.app/" class="image" target="_blank"
-                  ><img src="images/swav.png" alt=""
-                /></a>
-                <h3 class="major">SWAV</h3>
-                <p>
-					React, Formik, Yup, SCSS.
-                </p>
-              </article>
-            </section>
-          </div>
-        </section>
-      </section>
+    .btn {
+      display: inline-block;
+      background-color: var(--primary);
+      color: white;
+      font-weight: 600;
+      font-size: clamp(1rem, 1.5vw, 1.125rem);
+      padding: 1rem 2.5rem;
+      border-radius: 50px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      position: relative;
+      overflow: hidden;
+    }
 
-	  <!-- Academic Project -->
-	  <section id="four" class="wrapper alt style1">
-		<div class="inner">
-		  <h2 class="major">Academic Projects</h2>
-      <blockquote>
-        Detailed documentation is available on my GitHub.
-      </blockquote>
-		  <!-- <p>
-			Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
-			Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis
-			egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus
-			in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.
-		  </p> -->
-		  <section class="features">
-			<article>
-			  <a href="https://github.com/taynguyen3110/school-management" class="image" target="_blank"
-				><img src="images/school-management.png" alt=""
-			  /></a>
-			  <h3 class="major">School Management</h3>
-			  <p>
-				  Angular, Tailwind CSS, RxJs, NgRx, Node.js.
-			  </p>
-			</article>
-			<article>
-			  <a href="https://ecommerce-dev-richard.netlify.app/" class="image" target="_blank"
-				><img src="images/e-commerce.png" alt=""
-			  /></a>
-			  <h3 class="major">Shop.Co</h3>
-			  <p>
-				  React, Tailwind CSS, Firebase, CI/CD.
-			  </p>
-			</article>
-			<article>
-				<a href="https://github.com/taynguyen3110/XMOP" class="image" target="_blank"
-				  ><img src="images/xmop.png" alt=""
-				/></a>
-				<h3 class="major">Xmops</h3>
-				<p>
-					React, Express.js, Terraform, AWS SDK, AWS Cognito, RDS, EFS, Cloudwatch.
-				</p>
-			  </article>
-			<article>
-			  <a href="https://github.com/taynguyen3110/quizzit" class="image" target="_blank"
-				><img src="images/quizzit.png" alt=""
-			  /></a>
-			  <h3 class="major">Quizzit</h3>
-			  <p>
-          Razor Pages, C#, .NET Core, Entity Framework Core, MVC pattern.
-			  </p>
-			</article>
-		  </section>
-		</div>
-	  </section>
-	</section>
+    .btn:hover {
+      background-color: var(--primary-darker);
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 7px 20px rgba(59, 130, 246, 0.4);
+    }
 
-      <!-- Footer -->
-      <section id="footer">
-        <div id="contact" class="inner">
-          <h2 class="major">Get in touch</h2>
-          <p>
-            Have a project in mind or just want to say hello? I'd love to hear from you!
-          </p>
-          <ul style="display: flex; flex-direction: column;" class="contact">
-            <!-- <li class="icon solid fa-home">
-              Sydney, NSW 2566
-            </li>
-            <li class="icon solid fa-phone">0431 952 029</li>
-            <li class="icon solid fa-envelope">
-              <a href="#">taynguyen3110@gmail.com</a>
-            </li> -->
-            <i style="margin: 10px 5px;" class='bx bxs-home' ><span style="font-family: Source Sans Pro, Helvetica, sans-serif; margin-left: 15px;" href="#" target="_blank">Sydney, NSW, Australia</span></i>
-            <i style="margin: 10px 5px;" class='bx bxs-phone' ><span style="font-family: Source Sans Pro, Helvetica, sans-serif; margin-left: 15px;" href="#" target="_blank">0431 952 029</span></i>
-            <i style="margin: 10px 5px;" class='bx bxs-envelope' ><a style="font-family: Source Sans Pro, Helvetica, sans-serif; margin-left: 15px;" href="mailto:taynguyen3110@gmail.com" >taynguyen3110@gmail.com</a></i>
-            <i style="margin: 10px 5px;" class='bx bxl-linkedin-square' ><a style="font-family: Source Sans Pro, Helvetica, sans-serif; margin-left: 15px;" href="https://www.linkedin.com/in/richard-nguyen-0b4562151/" target="_blank">My Linkedin</a></i>
-            <i style="margin: 10px 5px;" class='bx bxl-github' ><a style="font-family: Source Sans Pro, Helvetica, sans-serif; margin-left: 15px;" href="https://github.com/taynguyen3110/" target="_blank">My Github</a></i>
-          </ul>
-          <ul class="copyright">
-            <li>Design Credit: <a href="http://html5up.net">HTML5 UP</a></li>
-          </ul>
-        </div>
-      </section>
-    </div>
+    .btn:active {
+      transform: translateY(1px) scale(0.98);
+      box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+    }
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+    .btn::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 150%;
+      height: 150%;
+      background: rgba(255, 255, 255, 0.15);
+      transform: translate(-50%, -50%) scale(0);
+      border-radius: 50%;
+      transition: transform 0.5s ease-out;
+    }
+
+    .btn:hover::after {
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .particle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      pointer-events: none;
+      animation: moveParticle linear infinite;
+    }
+
+    .cursor {
+      width: 20px;
+      height: 20px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      position: fixed;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      transition: width 0.3s, height 0.3s, border-color 0.3s;
+      z-index: 9999;
+      display: none;
+    }
+
+    .cursor-dot {
+      width: 4px;
+      height: 4px;
+      background-color: white;
+      border-radius: 50%;
+      position: fixed;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: 10000;
+      display: none;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes moveParticle {
+      0% {
+        transform: translateY(0);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-1000px);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1.5rem;
+      }
+      .btn {
+        padding: 0.875rem 2rem;
+      }
+      .cursor, .cursor-dot {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+  <div class="particles" id="particles"></div>
+  
+  <div class="container">
+    <h1>Welcome to My Digital Space</h1>
+    <p>I've moved to a new home on the web where I showcase my work, skills, and creative projects.</p>
+    <a href="https://richard-nguyen.vercel.app/" class="btn" id="redirect-btn">
+      Visit My Portfolio
+    </a>
+  </div>
+
+  <script>
+    // Create particles
+    const particlesContainer = document.getElementById('particles');
+    const particleCount = 50;
+    
+    for (let i = 0; i < particleCount; i++) {
+      const particle = document.createElement('div');
+      particle.classList.add('particle');
+      
+      // Random size between 2-6px
+      const size = Math.random() * 4 + 2;
+      particle.style.width = `${size}px`;
+      particle.style.height = `${size}px`;
+      
+      // Random position
+      particle.style.left = `${Math.random() * 100}%`;
+      particle.style.opacity = Math.random() * 0.5 + 0.2;
+      
+      // Random animation duration between 20-50s
+      const duration = Math.random() * 30 + 20;
+      particle.style.animationDuration = `${duration}s`;
+      
+      // Random delay so they don't all start at once
+      const delay = Math.random() * 20;
+      particle.style.animationDelay = `${delay}s`;
+      
+      particlesContainer.appendChild(particle);
+    }
+    
+    // Custom cursor effect
+    const cursor = document.querySelector('.cursor');
+    const cursorDot = document.querySelector('.cursor-dot');
+    
+    if (window.innerWidth > 768) {
+      cursor.style.display = 'block';
+      cursorDot.style.display = 'block';
+      
+      document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+        
+        cursorDot.style.left = e.clientX + 'px';
+        cursorDot.style.top = e.clientY + 'px';
+      });
+      
+      document.addEventListener('mousedown', () => {
+        cursor.style.width = '15px';
+        cursor.style.height = '15px';
+        cursor.style.borderColor = 'rgba(255, 255, 255, 0.7)';
+      });
+      
+      document.addEventListener('mouseup', () => {
+        cursor.style.width = '20px';
+        cursor.style.height = '20px';
+        cursor.style.borderColor = 'rgba(255, 255, 255, 0.5)';
+      });
+      
+      // Apply different cursor style on button hover
+      const redirectBtn = document.getElementById('redirect-btn');
+      redirectBtn.addEventListener('mouseenter', () => {
+        cursor.style.width = '60px';
+        cursor.style.height = '60px';
+        cursor.style.borderColor = 'var(--primary)';
+        cursor.style.borderWidth = '1px';
+        cursor.style.backgroundColor = 'rgba(59, 130, 246, 0.1)';
+      });
+      
+      redirectBtn.addEventListener('mouseleave', () => {
+        cursor.style.width = '20px';
+        cursor.style.height = '20px';
+        cursor.style.borderColor = 'rgba(255, 255, 255, 0.5)';
+        cursor.style.borderWidth = '2px';
+        cursor.style.backgroundColor = 'transparent';
+      });
+    }
+    
+    // Replace this with your actual portfolio URL
+    document.getElementById('redirect-btn').href = "https://richard-nguyen.vercel.app/";
+  </script>
+</body>
 </html>
